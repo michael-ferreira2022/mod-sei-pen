@@ -17,7 +17,6 @@ class PenHipoteseLegalRN extends InfraRN
   protected function listarConectado(PenHipoteseLegalDTO $objDTO)
     {               
     try {
-        //SessaoSEI::getInstance()->validarAuditarPermissao('email_sistema_excluir', __METHOD__, $arrObjEmailSistemaDTO);
         $objBD = new GenericoBD($this->inicializarObjInfraIBanco());            
         return $objBD->listar($objDTO);
     } 
@@ -29,7 +28,6 @@ class PenHipoteseLegalRN extends InfraRN
   protected function consultarControlado(PenHipoteseLegalDTO $objDTO)
     {               
     try {
-        //SessaoSEI::getInstance()->validarAuditarPermissao('email_sistema_excluir', __METHOD__, $arrObjEmailSistemaDTO);
         $objBD = new GenericoBD($this->inicializarObjInfraIBanco());            
         return $objBD->consultar($objDTO);
     } 
